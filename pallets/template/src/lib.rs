@@ -17,6 +17,7 @@ mod tests;
 pub trait Trait: frame_system::Trait {
 	/// Because this pallet emits events, it depends on the runtime's definition of an event.
 	type Event: From<Event<Self>> + Into<<Self as frame_system::Trait>::Event>;
+	
 }
 
 // The pallet's runtime storage items.
